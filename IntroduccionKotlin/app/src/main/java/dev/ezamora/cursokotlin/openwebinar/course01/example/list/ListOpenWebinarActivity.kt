@@ -3,41 +3,36 @@ package dev.ezamora.cursokotlin.openwebinar.course01.example.list
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import dev.ezamora.cursokotlin.R
 import dev.ezamora.cursokotlin.openwebinar.course01.model.CarModel
+import dev.ezamora.cursokotlin.openwebinar.course01.recyclerView.toast
 import kotlinx.android.synthetic.main.activity_list_open_webinar.*
 
 class ListOpenWebinarActivity : AppCompatActivity() {
 
-    private var carList: MutableList<CarModel> = mutableListOf()
+
+    private val carList = mutableListOf<CarModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_open_webinar)
         initCarList()
-        mainList.layoutManager = LinearLayoutManager(this)
-        mainList.adapter = CustomCarAdapter(carList, object: CustomCarAdapter.CustomListener {
-            override fun clickOnCarItem(carModel: CarModel) {
-                Toast.makeText(this@ListOpenWebinarActivity,
-                    "Click: " + carModel.brand,
-                    Toast.LENGTH_SHORT).show()
-            }
+        setupRecyclerView()
+    }
 
-            override fun longClickOnCarItem(carModel: CarModel) {
-                Toast.makeText(this@ListOpenWebinarActivity,
-                    "LongClick: " + carModel.brand,
-                    Toast.LENGTH_SHORT).show()
-            }
-
+    private fun setupRecyclerView() {
+        mainList.layoutManager = GridLayoutManager(this, 2)
+        mainList.adapter = CarAdapter(carList, {
+            toast(String.format("Marca %s", it.id), 500)
         })
     }
 
-
     private fun initCarList() {
-        carList = (1..100).map {
-            CarModel("Marca" + it.toString(), it.toString())
-        }.toMutableList()
+        for (number in 1 until 100) {
+            val id = if (number % 2 == 0) number.toString() else ""
+            carList.add(CarModel(id, String.format("Marca %s", number)))
+        }
     }
-
 }

@@ -6,6 +6,8 @@
 
     <uses-feature android:name="android.hardware.type.watch" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,12 +15,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CursoKotlin">
-       <!--
+        <activity android:name=".openwebinar.course01.recyclerView.ReciclerViewActivity"></activity>
+        <activity android:name=".openwebinar.course01.lambdas.LambdasActivity" />
+        <!--
         <uses-library
             android:name="com.google.android.wearable"
             android:required="true" />
-
-       -->
+        -->
         <!--
                Set to true if your app is Standalone, that is, it does not require the handheld
                app to run.

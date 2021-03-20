@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import dev.ezamora.cursokotlin.R
 import dev.ezamora.cursokotlin.openwebinar.course01.model.CarModel
 import kotlinx.android.synthetic.main.row_car.view.*
+import kotlinx.android.synthetic.main.row_car.view.rowCarBrandLabel
+import kotlinx.android.synthetic.main.row_car_example.view.*
 
 
 class CarAdapter(val items: List<CarModel>, val listener: (CarModel) -> Unit)
@@ -14,7 +16,7 @@ class CarAdapter(val items: List<CarModel>, val listener: (CarModel) -> Unit)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CarViewHolder {
         return CarViewHolder(LayoutInflater.from(parent.context).inflate(
-            R.layout.row_car, parent, false))
+            R.layout.row_car_example, parent, false))
     }
 
     override fun onBindViewHolder(holder: CarViewHolder, position: Int) {
