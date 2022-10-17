@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../kafka/kafka/microservices/account.cmd/src/main/java/com/banking/account/cmd/api/command/AccountCommandHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../kafka/kafka/microservices/account.cmd/src/main/java/com/banking/account/cmd/api/command/CommandHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../kafka/kafka/microservices/account.cmd/src/main/java/com/banking/account/cmd/domain/AccountAggregate.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/com/android/developer/firstCode/firstCode/firstCode.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/com/android/developer/firstCode/firstCode/kt.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/com/platzi/developer/firstClass/run.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/com/platzi/developer/firstClass/usingMaps.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/com/platzi/developer/firstClass/with.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/kotlin/howTOUseWhen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kotlin-playground/src/main/kotlin/kotlinplayground/HelloKotlin.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kotlin-playground/src/main/kotlin/kotlinplayground/HelloKotlinFile.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kotlin-playground/src/main/kotlin/kotlinplayground/basic/Conditions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kotlin-playground/src/main/kotlin/kotlinplayground/basic/LoopsAndRages.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kotlin-playground/src/main/kotlin/kotlinplayground/basic/Variables.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../kotlin-playground/src/main/kotlin/kotlinplayground/basic/WhileAndDo.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
